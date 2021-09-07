@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --watch --runInBand",
-    "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --no-cache --runInBand --coverage"
+    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watch --runInBand",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --no-cache --runInBand --coverage"
   },
   "keywords": [],
   "author": "",
