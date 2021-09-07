@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 const localHostSSL = {
   key: fs.readFileSync("./certificates/key.pem"),
-  search: fs.readFileSync("./certificates/cert.pem"),
+  cert: fs.readFileSync("./certificates/cert.pem"),
 };
 
 const server = https.createServer(localHostSSL, (req, res) => {
