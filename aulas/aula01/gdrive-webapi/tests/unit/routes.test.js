@@ -59,7 +59,7 @@ describe("Routes test suite", () => {
       const params = {
         ...defaultParams,
       };
-      
+
       params.request.method = "OPTIONS";
       await routes.handler(...params.values());
       expect(params.response.writeHead).toHaveBeenCalledWith(204);
@@ -89,5 +89,9 @@ describe("Routes test suite", () => {
       await routes.handler(...params.values());
       expect(routes.get).toHaveBeenCalled();
     });
+  });
+
+  describe("GET", () => {
+    test.skip("given method GET it should list all files downloaded", async () => {});
   });
 });
