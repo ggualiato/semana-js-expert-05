@@ -27,7 +27,7 @@ describe("FileHelper test suite", () => {
       };
       const mockUser = "ggualiato";
       const mockFilename = "file.png";
-      process.env.USER = mockUser;
+      process.env.USERNAME = mockUser;
 
       jest
         .spyOn(fs.promises, fs.promises.readdir.name)
